@@ -9,7 +9,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT sensorsTemperature, chipId, reading_time FROM SensorData ORDER BY id DESC";
+$sql = "SELECT id, sensorsTemperature, chipId, reading_time FROM SensorData ORDER BY id DESC";
 
 if ($result = $conn->query($sql)) {
     $response["SensorData"] = array();
@@ -19,6 +19,7 @@ if ($result = $conn->query($sql)) {
         $product["sensorsTemperature"] = $row["sensorsTemperature"];
         $product["reading_time"] = $row["reading_time"];
         $product["chipId"] = $row["chipId"];
+        $product["id"] = $row["id"];
         array_push($response["SensorData"], $product);
     }
     $response["success"] = 1;
