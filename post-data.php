@@ -1,7 +1,7 @@
 <?php
 $servername = "mysql.agh.edu.pl:3306";
 $username = "rojowska";
-$password = "RJvmGMVCBEJboy0n";
+$password = "pass";
 $dbname = "rojowska";
 
 $api_key_value = "tPmAT5Ab3j7F9";
