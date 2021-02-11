@@ -19,7 +19,7 @@
 <?php
 $servername = "mysql.agh.edu.pl:3306";
 $username = "rojowska";
-$password = "RJvmGMVCBEJboy0n";
+$password = "pass";
 $dbname = "rojowska";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
